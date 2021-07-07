@@ -1,0 +1,27 @@
+User aplikasi:
+admin : admin@creativeaudio.com (pass: admin)
+user : register akun sendiri
+
+Cara menjalankan aplikasi :
+1. gunakan xampp versi 7.1.4-0 atau yang terbaru
+2. create database db_creative_audio pada phpmyadmin (penamaan harus sama)
+3. upload file sql yg ada difolder Database
+4. copy folder creative_audio pada xampp/htdocs (tidak boleh perubahan nama)
+5. kemudian jalankan seperti biasa
+
+Alur Aplikasi :
+1. user register terlebih dahulu
+2. kemudian login menggunakan akun yg sudah didaftarkan
+3. setelah itu melakukan pemesanan
+4. dapat melakukan checkout pada keranjang belanja
+5. upload pembayaran
+6. jika sudah upload, baru pesanan masuk ke admin
+7. admin klik detail, kemudian upload resi
+8. user dapat melihat status pesanan di riwayat pesanan 
+9. selesai.
+
+Note : perhitungan rop dan eoq terdapat di file application/controller/Transaksi_Ctrl 
+	kemudian cari function pengiriman() disana ada dikasih tanda
+
+EOQ = Untuk sekali pemesanan berapa unit
+ROP = Jika persediaan sudah mencapai "unit" maka harus melakukan pemesanan lagi.
